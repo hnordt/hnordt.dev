@@ -6,7 +6,7 @@ export default class Document extends BaseDocument {
     return (
       <Html lang="en">
         <Head>
-          <meta name="description" content="" />
+          <meta name="description" content="Personal blog by Heliton Nordt" />
           <link rel="icon" href="/favicon.ico" />
           <link
             rel="stylesheet"
