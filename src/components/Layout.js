@@ -5,9 +5,9 @@ export default function Layout(props) {
   return (
     <>
       <Head>
-        <title>{props.title}</title>
+        <title>{props.title} | hnordt.dev</title>
       </Head>
-      <main className="p-6">{props.children}</main>
+      <main>{props.children}</main>
     </>
   )
 }

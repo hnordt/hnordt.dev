@@ -8,8 +8,12 @@ export default class Document extends BaseDocument {
         <Head>
           <meta name="description" content="Personal blog by Heliton Nordt" />
           <link rel="icon" href="/favicon.ico" />
+          <link
+            rel="stylesheet"
+            href="https://fonts.googleapis.com/css?family=Inter:100,200,300,400,500,600,700,800,900&display=swap"
+          />
         </Head>
-        <body className="bg-cool-gray-100 antialiased">
+        <body className="bg-white antialiased">
           <Main />
           <NextScript />
         </body>
