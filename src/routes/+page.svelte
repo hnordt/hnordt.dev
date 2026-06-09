@@ -55,10 +55,10 @@
 
           <!-- Screen Content -->
           <div
-            class="relative flex h-full w-full items-center justify-center overflow-hidden rounded-[30px] bg-zinc-900/10"
+            class="relative flex h-full w-full items-center justify-center overflow-hidden rounded-[30px] bg-zinc-900"
           >
             <svg
-              class="h-16 text-zinc-700"
+              class="hidden h-16 text-white"
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 24 24"
             >
