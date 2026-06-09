@@ -1,4 +1,7 @@
 <script lang="ts">
+  import "@fontsource-variable/inter";
+  import "@fontsource-variable/geist";
+
   import "./layout.css";
   import favicon from "$lib/assets/favicon.svg";
 
