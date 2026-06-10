@@ -5,9 +5,10 @@
   import "@fontsource/fira-sans/600.css";
   import "@fontsource/fira-sans/700.css";
   import "@fontsource/fira-sans/800.css";
-  import "./layout.css";
 
   import favicon from "$lib/assets/favicon.svg";
+
+  import "./layout.css";
 
   let { children } = $props();
 </script>
