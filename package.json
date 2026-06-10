@@ -13,7 +13,8 @@
     "prepare": "svelte-kit sync"
   },
   "dependencies": {
-    "@fontsource/fira-sans": "^5.2.7"
+    "@fontsource/fira-sans": "^5.2.7",
+    "marked": "^18.0.5"
   },
   "devDependencies": {
     "@eslint/js": "^10.0.1",
