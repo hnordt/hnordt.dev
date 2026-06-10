@@ -1,23 +1,27 @@
-import tailwindcss from "@tailwindcss/vite";
 import { defineConfig } from "vitest/config";
-import { playwright } from "@vitest/browser-playwright";
+import tailwindcss from "@tailwindcss/vite";
 import { sveltekit } from "@sveltejs/kit/vite";
+import { playwright } from "@vitest/browser-playwright";
 
 export default defineConfig({
   plugins: [tailwindcss(), sveltekit()],
   test: {
-    expect: { requireAssertions: true },
     projects: [
       {
         extends: "./vite.config.ts",
         test: {
           name: "client",
           browser: {
-            enabled: true,
             provider: playwright(),
-            instances: [{ browser: "chromium", headless: true }],
+            instances: [
+              {
+                browser: "chromium",
+                headless: true,
+              },
+            ],
+            enabled: true,
           },
-          include: ["src/**/*.svelte.{test,spec}.{js,ts}"],
+          include: ["src/**/*.svelte.{test,spec}.ts"],
           exclude: ["src/lib/server/**"],
         },
       },
@@ -27,8 +31,8 @@ export default defineConfig({
         test: {
           name: "server",
           environment: "node",
-          include: ["src/**/*.{test,spec}.{js,ts}"],
-          exclude: ["src/**/*.svelte.{test,spec}.{js,ts}"],
+          include: ["src/**/*.{test,spec}.ts"],
+          exclude: ["src/**/*.svelte.{test,spec}.ts"],
         },
       },
     ],
