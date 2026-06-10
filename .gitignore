@@ -1,25 +1,17 @@
-node_modules
-
-# Output
-.output
-.vercel
-.netlify
-.wrangler
-/.svelte-kit
-/build
-
-# OS
+# macOS
 .DS_Store
-Thumbs.db
 
-# Env
-.env
-.env.*
+# Environment
+.env*
 !.env.example
 !.env.test
 
-# Vite
-vite.config.js.timestamp-*
-vite.config.ts.timestamp-*
+# Node.js
+/node_modules
+
+# SvelteKit
+/.svelte-kit
+/build
+
 # Playwright
-test-results
+/test-results
