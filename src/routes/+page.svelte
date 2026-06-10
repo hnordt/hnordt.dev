@@ -1,10 +1,15 @@
 <script lang="ts">
+  import { dev } from "$app/environment";
   import { Header, Section, Device } from "$lib/components";
 
   const wipId = $props.id();
 </script>
 
-<div class="flex h-dvh flex-col" inert aria-hidden="true">
+<div
+  class="flex h-dvh flex-col"
+  inert={!dev}
+  aria-hidden={dev ? undefined : "true"}
+>
   <Header />
 
   <main class="flex flex-1 items-center justify-center p-16 text-center">
@@ -34,13 +39,15 @@
   </main>
 </div>
 
-<div
-  class="fixed inset-0 z-50 flex flex-col items-center justify-center bg-white/85 p-6 text-center backdrop-blur-xs"
-  role="dialog"
-  aria-labelledby={wipId}
-  aria-modal="true"
->
-  <h2 id={wipId} class="text-5xl font-medium">Work in progress.</h2>
+{#if !dev}
+  <div
+    class="fixed inset-0 z-50 flex flex-col items-center justify-center bg-white/85 p-6 text-center backdrop-blur-xs"
+    role="dialog"
+    aria-labelledby={wipId}
+    aria-modal="true"
+  >
+    <h2 id={wipId} class="text-5xl font-medium">Work in progress.</h2>
 
-  <p class="mt-4 text-xl font-medium text-zinc-500">Check back soon.</p>
-</div>
+    <p class="mt-4 text-xl font-medium text-zinc-500">Check back soon.</p>
+  </div>
+{/if}
