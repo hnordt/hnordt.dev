@@ -13,7 +13,7 @@
     "prepare": "svelte-kit sync"
   },
   "dependencies": {
-    "@fontsource/fira-sans": "^5.2.7",
+    "@fontsource/geist": "^5.2.9",
     "marked": "^18.0.5"
   },
   "devDependencies": {

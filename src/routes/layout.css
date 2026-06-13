@@ -3,5 +3,5 @@
 @plugin "@tailwindcss/typography";
 
 @theme {
-  --font-sans: "Fira Sans", system-ui, sans-serif;
+  --font-sans: "Geist", system-ui, sans-serif;
 }
