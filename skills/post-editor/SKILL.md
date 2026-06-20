@@ -1,4 +1,7 @@
-# Post Editor Skill
+---
+name: post-editor
+description: Edit public posts and articles to improve grammar, clarity, structure, readability, and flow while preserving the author’s ideas, tone, uncertainty, and natural non-marketing voice. Use when reviewing or rewriting drafts before publishing, especially software, architecture, AI-assisted development, SaaS, execution, or building notes.
+---
 
 > Repository note: this skill is currently stored in this website repo as a first implementation. We should move it to the dedicated `hnordt/skills` repository once the workflow is ready to be shared and reused across projects.
 
